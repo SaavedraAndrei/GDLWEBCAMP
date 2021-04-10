@@ -1,0 +1,26 @@
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/globales";
+@import "base/utilidades";
+@import "base/botones";
+@import "base/lightbox";
+
+/** UI **/
+@import "layout/header";
+@import "layout/navegacion";
+@import "layout/informacion";
+@import "layout/main";
+@import "layout/invitados";
+@import "layout/contador";
+@import "layout/precios";
+@import "layout/mapa";
+@import "layout/testimonial";
+@import "layout/newsletter";
+@import "layout/cuenta";
+@import "layout/footer";
+/** Paginas Internas **/
+@import "internas/registro";
+@import "internas/conferencias";
+@import "internas/calendario";
+// @import 'internas/nosotros';

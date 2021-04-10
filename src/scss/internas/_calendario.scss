@@ -1,0 +1,32 @@
+.contenido-dias {
+  @include grid(2, 0);
+  margin-bottom: 10rem;
+}
+
+.dia {
+  border: 2px solid #e1e1e1;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #e1e1e1;
+    transform: scale(1.1);
+  }
+  i {
+    color: $naranja;
+  }
+
+  .titulo {
+    color: $naranja;
+    font-weight: $bold;
+    font-size: 3rem;
+  }
+}
+
+.calendario-h3 {
+  i {
+    color: $naranja;
+  }
+  font-weight: $bold;
+  border-bottom: 2px solid $naranja;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,90 @@
+.site-header {
+  .hero {
+    background-image: url(/build/img/encabezado.webp);
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+
+    @include tablet {
+      height: 100vh;
+    }
+  }
+}
+
+.contenido-header {
+  padding-top: 5rem;
+
+  .nombre-sitio {
+    font-size: 4.5rem;
+    font-weight: $black;
+    color: $blanco;
+    margin-top: 5rem;
+
+    @include tablet {
+      font-size: 14rem;
+    }
+  }
+
+  .slogan {
+    text-align: center;
+    color: $blanco;
+    font-size: 2rem;
+    margin-top: 10rem;
+
+    span {
+      font-weight: $bold;
+    }
+
+    @include tablet {
+      font-size: 2.6rem;
+      margin-top: 7rem;
+    }
+  }
+}
+
+.informacion-evento {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6rem;
+
+  p {
+    text-align: center;
+    font-size: 2rem;
+    color: $blanco;
+
+    @include tablet {
+      font-size: 3rem;
+    }
+
+    i {
+      color: #f94918;
+      font-size: 3rem;
+
+      @include tablet {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+.redes-sociales {
+  text-align: center;
+  font-size: 3rem;
+  color: $blanco;
+
+  a {
+    color: $blanco;
+    margin-right: 2rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+// Lettering
+
+.nombre-sitio span {
+  position: relative;
+  text-shadow: 0 0 30px black;
+}

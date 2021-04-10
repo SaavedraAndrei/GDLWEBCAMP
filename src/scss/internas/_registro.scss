@@ -1,0 +1,97 @@
+.registro {
+  text-align: center;
+  text-transform: uppercase;
+  margin: $separacion 0;
+  width: 100%;
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: $bold;
+  }
+
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid $naranja;
+    padding-bottom: 1rem;
+  }
+
+  .caja {
+    background-color: $blanco;
+    padding: 2rem;
+    border: 2px solid #e1e1e1;
+    margin: 4rem;
+  }
+
+  .datos-usuario {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.paquetes {
+  .anuncio-precio {
+    padding: 2rem 9rem;
+  }
+}
+
+.tabla-precio {
+  input {
+    display: block;
+    width: 15rem;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+.contenido-dia {
+  @include grid(3, 3rem);
+  padding: 2rem;
+
+  label {
+    display: block;
+    text-align: left;
+    line-height: 2rem;
+  }
+
+  input {
+    margin-right: 1.5rem;
+  }
+
+  time {
+    color: $naranja;
+    font-weight: $bold;
+  }
+}
+
+.resumen {
+  p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: $bold;
+  }
+  .caja {
+    display: flex;
+    justify-content: space-around;
+
+    .orden {
+      text-align: left;
+      margin: $separacion/2 0;
+      label {
+        display: block;
+      }
+      input,
+      select {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.lista-productos,
+.suma-total {
+  padding: 1rem;
+  text-align: left;
+  line-height: 2.5rem;
+  font-weight: $bold;
+  color: $naranja;
+}

@@ -1,0 +1,26 @@
+.galeria {
+  @include grid(5, 4rem);
+  a {
+    margin: 0;
+    padding: 0;
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+.conferencia {
+  .activo {
+    border-bottom: 2px solid $naranja;
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $grisOscuro;
+  }
+}

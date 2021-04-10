@@ -1,0 +1,115 @@
+.main {
+  position: relative;
+
+  .contenido-video {
+    max-width: 100%;
+    overflow: hidden;
+    height: 80rem;
+
+    @include tablet {
+      height: 100rem;
+    }
+  }
+
+  .contenido-programa {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .programa-evento {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    width: 95%;
+    margin: 4rem auto;
+
+    @include tablet {
+      width: 35%;
+      margin: 10rem 0 10rem 5rem;
+    }
+
+    .menu-programa {
+      border-bottom: 1px solid #fe4918;
+      padding-bottom: 1rem;
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        color: $negro;
+        font-family: $fuente_Oswald;
+        font-size: 1.5rem;
+        position: relative;
+
+        @include tablet {
+          font-size: 2.5rem;
+        }
+
+        i {
+          color: #fe4918;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.info-curso {
+  .detalle-evento {
+    h3 {
+      color: $naranja;
+      text-align: left;
+      font-weight: $bold;
+      font-size: 1.8rem;
+
+      @include tablet {
+        font-size: 2.4rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+
+      @include tablet {
+        font-size: 2rem;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid $amarillo;
+      }
+
+      i {
+        color: $naranja;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-programa {
+  a {
+    &.activo {
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2rem;
+        width: 5rem;
+        bottom: -3rem;
+        background-image: url(/build/img/talleres-flecha.webp);
+        background-position: top center;
+        background-repeat: no-repeat;
+        font-weight: $bold;
+        text-align: right;
+      }
+    }
+  }
+}

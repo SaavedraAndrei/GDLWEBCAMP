@@ -1,0 +1,69 @@
+.precio {
+  margin: $separacion 0;
+  .contenedor-precios {
+    display: flex;
+    justify-content: space-around;
+
+    .lista-precios {
+      padding: 0;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 50px $grisOscuro;
+      }
+    }
+  }
+}
+
+.tabla-precio {
+  h3 {
+    text-align: center;
+    color: $naranja;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: $fuente_Oswald;
+  }
+  .numero {
+    text-align: center;
+    font-family: $fuente_Oswald;
+    font-size: 6.5rem;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      font-family: $fuente_Oswald;
+      color: $grisOscuro;
+      margin-bottom: 3rem;
+      text-align: center;
+
+      &::before {
+        font-family: "FontAwesome";
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px;
+        font-size: 2rem;
+        color: $verde;
+        -webkit-font-smoothing: antialiased;
+        content: "\f00c";
+      }
+    }
+  }
+
+  .boton {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .boton.hollow {
+    background-color: white;
+    color: $naranja;
+    border: 2px solid $naranja;
+  }
+}
+
+.anuncio-precio {
+  border: 2px solid $naranja;
+  padding: 2rem 10rem;
+}

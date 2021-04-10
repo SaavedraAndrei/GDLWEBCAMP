@@ -1,0 +1,34 @@
+.contenido-informacion {
+  margin: $separacion * 1.3 auto;
+
+  p {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
+
+    @include tablet {
+      font-size: 2.4rem;
+    }
+  }
+}
+h2 {
+  text-align: center;
+  font-family: $fuente_Oswald;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  @include tablet {
+    font-size: 4rem;
+  }
+
+  &::after {
+    content: "";
+    background-image: url(/build/img/separador.webp);
+    height: 3rem;
+    width: 10rem;
+    display: block;
+    margin: 3rem auto;
+  }
+}

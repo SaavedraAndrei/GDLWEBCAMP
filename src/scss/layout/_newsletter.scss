@@ -1,0 +1,37 @@
+.newsletter {
+  position: relative;
+
+  &::before {
+    background-image: url(/build/img/bg-newsletter.webp);
+    content: "";
+  }
+
+  .contenido-newsletter {
+    text-align: center;
+    position: relative;
+    padding: $separacion * 2 0;
+    p {
+      font-size: 1.8rem;
+      color: $blanco;
+      text-transform: lowercase;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 13rem;
+      font-family: $fuente_Oswald;
+      color: $blanco;
+      padding: 4rem 0;
+    }
+
+    .boton {
+      background-color: transparent;
+      border: 2px solid #e1e1e1;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $naranja;
+        border: 2px solid $naranja;
+      }
+    }
+  }
+}

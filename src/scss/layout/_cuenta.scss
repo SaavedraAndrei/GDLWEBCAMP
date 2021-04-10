@@ -1,0 +1,12 @@
+.cuenta-regresiva {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .fecha {
+    font-family: $fuente_Oswald;
+    text-transform: uppercase;
+    color: $grisOscuro;
+    text-align: center;
+  }
+}

@@ -1,0 +1,56 @@
+.invitados {
+  margin: $separacion 0;
+
+  .lista-invitados {
+    @include tablet {
+      @include grid(3, 2rem);
+    }
+
+    li {
+      list-style: none;
+      padding: none;
+      margin: $separacion/2 0;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.invitado {
+  position: relative;
+
+  img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      filter: grayscale(0);
+
+      transform: scale(1.02);
+    }
+  }
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    font-family: $fuente_Oswald;
+    text-transform: uppercase;
+    font-weight: $bold;
+    font-size: 2.5rem;
+    color: $naranja;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover {
+    p {
+      opacity: 0;
+    }
+  }
+}

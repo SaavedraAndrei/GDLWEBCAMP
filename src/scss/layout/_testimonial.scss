@@ -1,0 +1,53 @@
+.contenido-testimonial {
+  @include grid(3, 1rem);
+
+  .testimonial {
+    background-color: $blanco;
+    border: 2px solid #e1e1e1;
+
+    margin-bottom: 3rem;
+    position: relative;
+
+    p {
+      text-align: justify;
+      font-size: 1.5rem;
+      padding: 1rem 7rem;
+
+      &::before {
+        content: "\201c";
+        position: absolute;
+        color: $naranja;
+        left: 25px;
+        top: 40px;
+        font-size: 10rem;
+      }
+    }
+  }
+}
+
+.info-testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  img {
+    border-radius: 50%;
+    display: block;
+    width: 10rem;
+    // margin-bottom: rem;
+  }
+  cite {
+    font-size: 1.8rem;
+    color: $naranja;
+    font-weight: $bold;
+    padding-left: 2rem;
+    line-height: 2.5rem;
+    font-style: normal;
+
+    span {
+      font-size: 1.4rem;
+      color: $negro;
+    }
+  }
+}

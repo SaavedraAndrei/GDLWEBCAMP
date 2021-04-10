@@ -1,0 +1,80 @@
+.seccion-nav {
+  background-color: $grisOscuro;
+  .barra {
+    padding: 2rem;
+
+    &.contenedor {
+      max-width: 95%;
+    }
+
+    .logo {
+      img {
+        width: 80%;
+      }
+    }
+
+    @include tablet {
+      .contenido-barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.navegacion {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+
+  @include tablet {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+
+  a {
+    color: $blanco;
+    font-size: 3rem;
+    font-family: $fuente_Oswald;
+    padding: 1rem;
+    margin: 0 4rem 0 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    &:last-of-type {
+      margin-right: 0;
+      border: 2px solid #f94918;
+      color: #f94918;
+
+      &:hover {
+        color: $blanco;
+      }
+    }
+
+    &:hover {
+      background-color: #f94918;
+    }
+  }
+}
+
+.menu-movil {
+  display: flex;
+  justify-content: right;
+  img {
+    display: block;
+    width: 5.5rem;
+    text-align: right;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.derecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,49 @@
+.contador {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(/build/img/bg-resumen.jpg);
+  }
+}
+
+.parallax {
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+  }
+}
+
+.resumen-evento {
+  position: relative;
+  padding: 12rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  li {
+    text-align: center;
+    color: $blanco;
+    list-style: none;
+    font-size: 3rem;
+    font-family: $fuente_Oswald;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.numero {
+  font-size: 8rem;
+  font-family: $fuente_Oswald;
+  color: $naranja;
+  margin: 6rem 0;
+  text-align: center;
+}

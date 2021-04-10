@@ -1,0 +1,18 @@
+.contenedor {
+  width: 95%;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+.seccion {
+  margin: $separacion auto;
+}
+
+.contenido-centrado {
+  max-width: 80rem;
+}
+
+.alinear-derecha {
+  display: flex;
+  justify-content: flex-end;
+}

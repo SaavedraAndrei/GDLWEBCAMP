@@ -1,0 +1,45 @@
+.footer {
+  background-color: $grisOscuro;
+  padding: $separacion 0 $separacion * 1.8 0;
+  .contenedor-footer {
+    display: flex;
+    column-gap: 3rem;
+    justify-content: space-around;
+  }
+}
+
+.texto-footer {
+  flex: 0 0 calc(25%);
+  h3 {
+    font-family: $fuente_Oswald;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $blanco;
+    text-align: left;
+
+    span {
+      color: $naranja;
+    }
+  }
+  p {
+    padding-top: 2rem;
+    line-height: 3rem;
+    text-align: justify;
+    color: $blanco;
+  }
+  .redes-sociales {
+    padding-top: 2rem;
+    text-align: left;
+  }
+}
+
+.copyright {
+  padding: 0.5rem;
+  background-color: darken($grisOscuro, 3);
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $fuente_Oswald;
+    color: $naranja;
+  }
+}
